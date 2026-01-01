@@ -13,6 +13,7 @@ except LookupError:
 
 # Load stopwords
 stop_words = set(stopwords.words("english"))
+stop_words.remove("not")
 
 # Load trained model and vectorizer
 model = pickle.load(open("sentiment_model.pkl", "rb"))
